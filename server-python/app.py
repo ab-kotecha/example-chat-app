@@ -94,6 +94,7 @@ def stream():
         response = chat_session.send_message(msg, stream=True)
 
         for chunk in response:
+            print(chunk.text)
             yield f"{chunk.text}"
 
     return Response(stream_with_context(generate()), mimetype="text/event-stream")

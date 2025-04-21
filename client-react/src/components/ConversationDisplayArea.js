@@ -1,3 +1,5 @@
+// File: components/ConversationDisplayArea.js
+
 import React from 'react';
 import Markdown from 'react-markdown';
 import userIcon from '../assets/user-icon.png';
